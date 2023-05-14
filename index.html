@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <style>
+    /* Add styles here for the canvas and any other elements on the page */
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    #name {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-4t+3+UUBz/qG1RWE38ufa5Tg+WJbcXQx14tJ4Id+uv5AqLW8hdqAgktoESvPPcAZ4gXvTUKI05bgWR1jM2jWOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
-</head>
-<body>
- 
+  
   <!-- Add other HTML content here -->
 
 
@@ -63,11 +77,10 @@
   <body>
     <!-- HEADER -->
     <header id="header">
-      <div id="particles-js">
+      
         <nav id="nav" data-aos="fade-in">
           <div class="container nav-container">
             
-            </a>
             <ul class="hide-for-mobile nav-links flex">
               <li>
                 <a href="#projects" class="link"
@@ -148,13 +161,13 @@
             <h1 class="h1">
               
               <!-- <span class="typed-text"></span><span class="cursor">&nbsp;</span> -->
-              Hi, I'm <span class="main-font text-blue">Oumayma</span>
+              Hi, I'm <span class="main-font text-blue">Oumayma!</span>
+
             </h1>
             <p class="student" id="student">
-              Soon to be a graduate of the <a href="https://ensimag.grenoble-inp.fr/en" class="green-link-underline" target="_blank"><i>National School of Computer Science and Applied Mathematics of Grenoble</i></a> 
-               & <a href="https://liu.se/" class="blue-link-underline" target="_blank"><i>Linköping University</i></a> with a degree in data science, Artificial intelligence & Software engineering. 
+              Soon to be a graduate of the <a href="https://ensimag.grenoble-inp.fr/en" class="green-link-underline" target="_blank">National School of Computer Science and Applied Mathematics of Grenoble</a> 
+               & <a href="https://liu.se/" class="blue-link-underline" target="_blank">Linköping university </a>with a degree in data science, Artificial intelligence & Software engineering. 
             </p>
-            
             <div class="hero-btns">
               <a href="#projects" class="btn-blue"><i class="fas fa-code"></i> Projects</a>
               <a href="https://github.com/Oumaymaelhitsamid" class="btn-blue-outline mx-1" id="projects-btn"
@@ -200,7 +213,7 @@
         <h2 class="main-font">My<span class="text-blue main-font"> Projects</span></h2>
         <div class="project-row" data-aos="fade-up">
           <div class="project-left">
-            <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\facereco.png" alt="">
+            <img src="img\facereco.png" alt="">
             
 
           </div>
@@ -222,7 +235,7 @@
         </div> 
         <div class="project-row" data-aos="fade-up">
           <div class="project-left">
-            <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\deca.jpg" alt="">
+            <img src="img\deca.jpg" alt="">
           </div>
           <div class="project-right">
             <h3>Deca compiler</h3>
@@ -247,7 +260,7 @@
         </div>
         <div class="project-row" data-aos="fade-up">
           <div class="project-left">
-            <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\video.png" alt="">
+            <img src="img\video.png" alt="">
           </div>
           <div class="project-right">
             <h3>Video player ogg/theora/vorbis</h3>
@@ -266,7 +279,7 @@
         </div>
         <div class="project-row" data-aos="fade-up">
           <div class="project-left" >
-            <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\shell.png" alt="">
+            <img src="img\shell.png" alt="">
           </div>
           <div class="project-right">
             <h3>Mini-shell</h3>
@@ -284,7 +297,7 @@
         </div>
         <div class="project-row" data-aos="fade-up">
           <div class="project-left">
-            <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\malloc - Copy.png" alt="">
+            <img src="img\malloc - Copy.png" alt="">
           </div>
           <div class="project-right">
             <h3>Memory Allocator </h3>
@@ -305,7 +318,7 @@
         </div>
         <div class="project-row" data-aos="fade-up">
           <div class="project-left">
-            <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\bd.png" height="500" alt="">
+            <img src="img\bd.png" height="500" alt="">
           </div>
           <div class="project-right">
             <h3>Gange Application Development for Product Sales</h3>
@@ -327,10 +340,9 @@
           </div>
         </div>
         
-        
         <div class="project-row" data-aos="fade-up">
           <div class="project-left">
-            <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\Gm.png" alt="">
+            <img src="img\Gm.png" alt="">
           </div>
           <div class="project-right">
             <h3>Splines Hermite modeling</h3>
@@ -394,7 +406,7 @@
         <div class="experience-card" data-aos="zoom-in">
             <div class="experience-card-column">
               <div class="card-column-image">
-                <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\CEA.png" alt="">
+                <img src="img\CEA.png" alt="">
               </div>
 
               <div class="card-column-large">
@@ -416,7 +428,7 @@
             <div class="experience-card" data-aos="zoom-in">
               <div class="experience-card-column">
                 <div class="card-column-image">
-                  <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\ljk.png" alt="">
+                  <img src="img\ljk.png" alt="">
                 </div>
                 <div class="card-column-large">
                   <h4 class="experience-year">Mai 2022-September 2022</h4>
@@ -446,7 +458,7 @@
         <div class="education-card" data-aos="zoom-in">
             <div class="education-card-column">
               <div class="card-column-image">
-                <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\logo_liu.png" alt="">
+                <img src="img\logo_liu.png" alt="">
               </div>
 
               <div class="card-column-large">
@@ -464,7 +476,7 @@
         <div class="education-card" data-aos="zoom-in">
             <div class="education-card-column">
               <div class="card-column-image">
-                <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\logo-ensimag.png" alt="">
+                <img src="img\logo-ensimag.png" alt="">
               </div>
               <div class="card-column-large">
                 <h4 class="education-year">2020-2023</h4>
@@ -481,7 +493,7 @@
           <div class="education-card" data-aos="zoom-in">
             <div class="education-card-column">
               <div class="card-column-image">
-                <img src="C:\Users\oumay\Downloads\echarifs.github.io-main (1)\portefolio-Oumayma-elhit\img\prepa.jpg" alt="">
+                <img src="img\prepa.jpg" alt="">
               </div>
               <div class="card-column-large">
                 <h4 class="education-year">2018-2020</h4>
@@ -560,7 +572,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-flex">
-          
+         
 
           <div class="footer-icon-links">
             <a href="https://github.com/Oumaymaelhitsamid"
@@ -580,7 +592,14 @@
       <i class="fa fa-chevron-up"></i>
     </a>
 
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     
+    
+    
+
+    <script defer src="js/app.js"></script>
 
     <!-- AOS Animations -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -597,14 +616,7 @@
         height: 100%;
         z-index: -1;
       }
-    </style>
-    <canvas id="canvas"></canvas>
-    <script src="js/webglfluid.js"></script>
-    <script>
-      const canvas = document.getElementById('canvas');
-      const fluid = new FluidSim(canvas);
-      fluid.start();
-    </script>
+    
 
   
  
